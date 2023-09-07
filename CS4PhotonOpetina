@@ -1,1 +1,67 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package cs4photonopetina;
+
+/**
+ *
+ * @author cassandra
+ */
+public class Cs4PhotonOpetina {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args){
+        String name_1 = "Gustave Courbet";
+        String name_2 = "Claude Monet";
+        String name_3 = "Jackson Pollock";
+               
+        int year_1 = 58;
+        int year_2 = 86;
+        int year_3 = 44;
+       
+        boolean style_1 = true;
+        boolean style_2 = false;
+        boolean style_3 = false;
+      
+      System.out.println(
+         """
+         Artist 1
+         Name: """ + name_1 + "\n" + "Age at death: " + year_1 + "\n" + "Is realism their main art style?: " + style_1 + "\n"   
+     );
+     
+      System.out.println(
+         """
+         Artist 2
+         Name: """ + name_2 + "\n" + "Age at death: " + year_2 + "\n" + "Is realism their main art style?: " + style_2 + "\n" 
+     );
+     
+      System.out.println(
+         """
+         Artist 3
+         Name: """ + name_3 + "\n" + "Age at death: " + year_3 + "\n" + "Is realism their main art style?: " + style_3 + "\n" 
+     );
+     
+      int ageTotal = year_1 + year_2 + year_3;
+      boolean realism = style_1 && style_2 && style_3;
+      boolean ageWhangOd = ageTotal > 106;
+     
+      System.out.println(
+         "Total of their ages: " + ageTotal 
+     );
+     
+      System.out.println(
+         "The artists' art styles are the same: " + realism
+     );
+     
+    System.out.println(
+         "Is the total of their ages greater than Whang-od Oggay's current age?: " + ageWhangOd      
+     );
+                     
+    }
+   
+}
+
 
